@@ -18,6 +18,11 @@ public class TestPrimeFactorization {
 		assertEquals(list(2),PrimeFactorization.generatePrimes(2));
 	}
 	
+	@Test
+	public void testTwo() {
+		assertEquals(list(3),PrimeFactorization.generatePrimes(3));
+	}
+	
 	
 	
 	private ArrayList<Integer> list(int... ints){

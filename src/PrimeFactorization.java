@@ -3,6 +3,10 @@ import java.util.ArrayList;
 
 public class PrimeFactorization {
 	public static ArrayList<Integer> generatePrimes(int n){
-		return new ArrayList<Integer>();
+		ArrayList<Integer> tempArray = new ArrayList<Integer>();
+		if (n == 2) {
+			tempArray.add(2);
+		}
+		return tempArray;
 	}
 }
