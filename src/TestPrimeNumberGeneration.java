@@ -32,6 +32,11 @@ public class TestPrimeNumberGeneration {
 		assertEquals(list(2,3),PrimeFactorization.primeNumberGenerator(4));
 	}
 	
+	@Test
+	public void testSix() {
+		assertEquals(list(2,3,5),PrimeFactorization.primeNumberGenerator(6));
+	}
+	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints){

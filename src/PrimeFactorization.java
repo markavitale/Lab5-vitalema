@@ -14,8 +14,11 @@ public class PrimeFactorization {
 
 	public static ArrayList<Integer> primeNumberGenerator(int i) {
 		ArrayList<Integer> temp = new ArrayList<Integer>();
-		if (i ==3) {
+		if (i >= 3) {
 			temp.add(2);
+		}
+		if (i >= 4){
+			temp.add(3);
 		}
 		return temp;
 	}
