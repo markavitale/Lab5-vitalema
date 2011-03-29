@@ -14,12 +14,19 @@ public class PrimeFactorization {
 
 	public static ArrayList<Integer> primeNumberGenerator(int i) {
 		ArrayList<Integer> temp = new ArrayList<Integer>();
-		if (i >= 3) {
-			temp.add(2);
-		}
-		if (i >= 4){
-			temp.add(3);
+		for (int z = 1; z < i; z++){
+			if(generatePrimes(z).equals(list(z))){
+				temp.add(z);
+			}
 		}
 		return temp;
+	}
+	
+	private static ArrayList<Integer> list(int... ints){
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		for(int i : ints){
+			ret.add(i);
+		}
+		return ret;
 	}
 }
