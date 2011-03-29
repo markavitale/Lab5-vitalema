@@ -28,6 +28,15 @@ public class TestPrimeFactorization {
 		assertEquals(list(2,2),PrimeFactorization.generatePrimes(4));
 	}
 	
+	@Test
+	public void testSix() {
+		assertEquals(list(2,3),PrimeFactorization.generatePrimes(6));
+	}
+	
+	@Test
+	public void testEight() {
+		assertEquals(list(2,2,2),PrimeFactorization.generatePrimes(8));
+	}
 	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
