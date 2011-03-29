@@ -14,9 +14,19 @@ public class TestPrimeNumberGeneration {
 	
 	@Test
 	public void testOne() {
-		AssertEquals(list(),primeNumberGenerator(1));
+		assertEquals(list(),PrimeFactorization.primeNumberGenerator(1));
+	}
+	
+	@Test
+	public void testTwo() {
+		assertEquals(list(),PrimeFactorization.primeNumberGenerator(2));
 	}
 
+	@Test
+	public void testThree() {
+		assertEquals(list(2),PrimeFactorization.primeNumberGenerator(3));
+	}
+	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints){

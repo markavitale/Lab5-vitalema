@@ -11,4 +11,10 @@ public class PrimeFactorization {
 		}
 		return tempArray;
 	}
+
+	public static ArrayList<Integer> primeNumberGenerator(int i) {
+		ArrayList<Integer> temp = new ArrayList<Integer>();
+		
+		return temp;
+	}
 }
