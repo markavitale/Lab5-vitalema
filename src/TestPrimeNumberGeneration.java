@@ -42,6 +42,11 @@ public class TestPrimeNumberGeneration {
 		assertEquals(list(2,3,5,7,11),PrimeFactorization.primeNumberGenerator(13));
 	}
 	
+	@Test
+	public void testBigNumber() {
+		assertEquals(list(2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101),PrimeFactorization.primeNumberGenerator(103));
+	}
+	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints){
