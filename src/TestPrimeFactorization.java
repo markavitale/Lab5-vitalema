@@ -19,10 +19,14 @@ public class TestPrimeFactorization {
 	}
 	
 	@Test
-	public void testTwo() {
+	public void testThree() {
 		assertEquals(list(3),PrimeFactorization.generatePrimes(3));
 	}
 	
+	@Test
+	public void testFour() {
+		assertEquals(list(2,2),PrimeFactorization.generatePrimes(4));
+	}
 	
 	
 	private ArrayList<Integer> list(int... ints){
